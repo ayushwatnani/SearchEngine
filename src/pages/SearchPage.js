@@ -1,7 +1,7 @@
 import React from 'react';
 import "./SearchPage.css";
 import {useStateValue} from "../StateProvider/StateProvider";
-import useGoogleSearch from "../useGoogleSearch";
+// import useGoogleSearch from "../useGoogleSearch";
 // import Response from "../response";
 import {Link} from "react-router-dom";
 import Search from "../components/Search";
