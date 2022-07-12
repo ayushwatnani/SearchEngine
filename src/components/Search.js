@@ -7,14 +7,14 @@ import {useHistory} from "react-router-dom";
 import {useStateValue} from "../StateProvider/StateProvider";
 import {actionTypes} from "../StateProvider/reducer";
 
-function Search({hideButtons = false}) {
+function Search({hideButtons = false, searchq}) {
 
     // eslint-disable-next-line no-empty-pattern
     const [{}, dispatch] = useStateValue();
 
     const [input, setInput] = useState("");
     const history = useHistory();
-
+    
     const search = sou => {
         sou.preventDefault();
 
@@ -32,7 +32,7 @@ function Search({hideButtons = false}) {
             <div className="search_input">
                 <SearchIcon className="search_inputIcon"/>
                 <input
-                    value={input}
+                    value={searchq}
                     onChange={sou => setInput(sou.target.value)}
                 />
                 <MicIcon/>

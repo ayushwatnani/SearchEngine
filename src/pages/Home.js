@@ -20,7 +20,7 @@ function Home() {
                     <Link to="/images">Images</Link>
                     <AppsIcon/>
                     <Avatar
-                        src="https://lh3.googleusercontent.com/a-/AOh14GiAtdWYpX5yMarWgdlpDfi4c1ECcOVePjvQHUtM"
+                        src=""
                         style={{border: "1px solid green"}}
                     />
                 </div>
@@ -29,6 +29,7 @@ function Home() {
                 <img
                     src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"
                     alt=""/>
+                    {/* <p style={"text-align:center"}>Search Engine</p> */}
                 <div className="home_inputContainer">
                     {/*<Search/>*/}
                     <Search/>

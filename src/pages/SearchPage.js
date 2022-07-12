@@ -18,12 +18,12 @@ function SearchPage() {
     const [{term}, dispatch] = useStateValue();
 
     //LIVE API Call *****************************************
-    const {data} = useGoogleSearch(term);
+    // const {data} = useGoogleSearch(term);
 
     // const data = Response;
 
     // https://cse.google.com/cse/create/new
-    console.log(data);
+    // console.log(data);
 
     return (
         <div className="searchPage">
@@ -34,9 +34,10 @@ function SearchPage() {
                         className="searchPage_logo"
                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"
                         alt=""/>
+                    
                 </Link>
                 <div className="searchPage_headerBody">
-                    <Search hideButtons/>
+                    <Search hideButtons searchq={term} />
                     <div className="searchPage_options">
 
                         {/*--------searchPage_optionsLeft--------------*/}
@@ -81,40 +82,137 @@ function SearchPage() {
                 </div>
             </div>
 
-            {term && (
-                <div className="searchPage_results">
+            <div className="searchPage_results">
 
                     <p className="searchPage_resultCount">
-                        About {data?.searchInformation.formattedTotalResults} results
-                        ({data?.searchInformation.formattedSearchTime} seconds) for {term}
+                        About 100000 results
+                         for {term} in 0.00015 seconds
                     </p>
 
-                    {data?.items.map(item => (
-                        <div className="searchPage_result">
+                    <div className="searchPage_result">
                             {/* eslint-disable-next-line react/jsx-no-target-blank */}
-                            <a href={item.link} target="_blank">
-                                {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
-                                    <img
+                            <a href='#' target="_blank">
+                            
+                                    {/* <img
                                         className="searchPage_resultImage"
-                                        src={item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src}
+                                        src='https://ichef.bbci.co.uk/news/640/cpsprodpb/CF28/production/_98123035_gettyimages-73254912.jpg'
                                         alt=''
-                                    />
-                                )}
-                                {item.displayLink} ✔
+                                        style={{height:'100px', width:'350px'}}
+                                    /> */}
+                            
+                                
                             </a>
                             {/* eslint-disable-next-line react/jsx-no-target-blank */}
-                            <a className="searchPage_resultTitle" href={item.link} target="_blank">
-                                <h2>{item.title}</h2>
+                            <a target="_blank" href="https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/" className="searchPage_resultSnippet">
+                            https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a
+                            </a>
+                            <a className="searchPage_resultTitle" href='https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/' target="_blank">
+                                <h2>Rajar Singh Delhi |Director Profile - The Company Check</h2>
                             </a>
                             <p className="searchPage_resultSnippet">
-                                {item.snippet}
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                             </p>
-                            <hr/>
+                            <br/>
+
+                            <a href='#' target="_blank">
+                            
+                                    {/* <img
+                                        className="searchPage_resultImage"
+                                        src='https://ichef.bbci.co.uk/news/640/cpsprodpb/CF28/production/_98123035_gettyimages-73254912.jpg'
+                                        alt=''
+                                        style={{height:'100px', width:'350px'}}
+                                    /> */}
+                            
+                                
+                            </a>
+                            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                            <a target="_blank" href="https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/" className="searchPage_resultSnippet">
+                            https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a
+                            </a>
+                            <a className="searchPage_resultTitle" href='https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/' target="_blank">
+                                <h2>Rajar Singh Delhi |Director Profile - The Company Check</h2>
+                            </a>
+                            <p className="searchPage_resultSnippet">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            </p>
+                            <br/>
+
+                            <a href='#' target="_blank">
+                            
+                                    {/* <img
+                                        className="searchPage_resultImage"
+                                        src='https://ichef.bbci.co.uk/news/640/cpsprodpb/CF28/production/_98123035_gettyimages-73254912.jpg'
+                                        alt=''
+                                        style={{height:'100px', width:'350px'}}
+                                    /> */}
+                            
+                                
+                            </a>
+                            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                            <a target="_blank" href="https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/" className="searchPage_resultSnippet">
+                            https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a
+                            </a>
+                            <a className="searchPage_resultTitle" href='https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/' target="_blank">
+                                <h2>Rajar Singh Delhi |Director Profile - The Company Check</h2>
+                            </a>
+                            <p className="searchPage_resultSnippet">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            </p>
+                            <br/>
+
+
+                            <a href='#' target="_blank">
+                            
+                                    {/* <img
+                                        className="searchPage_resultImage"
+                                        src='https://ichef.bbci.co.uk/news/640/cpsprodpb/CF28/production/_98123035_gettyimages-73254912.jpg'
+                                        alt=''
+                                        style={{height:'100px', width:'350px'}}
+                                    /> */}
+                            
+                                
+                            </a>
+                            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                            <a target="_blank" href="https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/" className="searchPage_resultSnippet">
+                            https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a
+                            </a>
+                            <a className="searchPage_resultTitle" href='https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/' target="_blank">
+                                <h2>Rajar Singh Delhi |Director Profile - The Company Check</h2>
+                            </a>
+                            <p className="searchPage_resultSnippet">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            </p>
+                            <br/>
+
+
+                            <a href='#' target="_blank">
+                            
+                                    {/* <img
+                                        className="searchPage_resultImage"
+                                        src='https://ichef.bbci.co.uk/news/640/cpsprodpb/CF28/production/_98123035_gettyimages-73254912.jpg'
+                                        alt=''
+                                        style={{height:'100px', width:'350px'}}
+                                    /> */}
+                            
+                                
+                            </a>
+                            {/* eslint-disable-next-line react/jsx-no-target-blank */}
+                            <a target="_blank" href="https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/" className="searchPage_resultSnippet">
+                            https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a
+                            </a>
+                            <a className="searchPage_resultTitle" href='https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/' target="_blank">
+                                <h2>Rajar Singh Delhi |Director Profile - The Company Check</h2>
+                            </a>
+                            <p className="searchPage_resultSnippet">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            </p>
+                            <br/>
                         </div>
-                    ))}
+
 
                 </div>
-            )}
+
+
         </div>
     );
 }
