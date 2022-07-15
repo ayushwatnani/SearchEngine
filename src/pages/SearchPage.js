@@ -210,12 +210,14 @@ function SearchPage() {
                     <a target="_blank" href="http://delhitimesnews.co/?p=54" className="searchPage_resultSnippet">
                         http://delhitimesnews.co/?p=54
                     </a>
-                    <a className="searchPage_resultTitle" href='https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/' target="_blank">
+                    <a className="searchPage_resultTitle" href='"http://delhitimesnews.co/?p=54' target="_blank">
                         <h2>COMPUTER HACKER KILLED IN POLICE PURSUIT</h2>
                     </a>
                     <p className="searchPage_resultSnippet">
                         Local man was believed to have aided in the theft of
-                        international intelligence ...
+                        international intelligence On Thursday, police attempting to arrest 24-year-old Rajar
+                        Singh fired at him during a chase through Karol Bagh
+                        neighborhood...
                     </p>
                     <br />
 
