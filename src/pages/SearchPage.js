@@ -210,7 +210,7 @@ function SearchPage() {
                     <a target="_blank" href="http://delhitimesnews.co/?p=54" className="searchPage_resultSnippet">
                         http://delhitimesnews.co/?p=54
                     </a>
-                    <a className="searchPage_resultTitle" href='"http://delhitimesnews.co/?p=54' target="_blank">
+                    <a className="searchPage_resultTitle" href='http://delhitimesnews.co/?p=54' target="_blank">
                         <h2>COMPUTER HACKER KILLED IN POLICE PURSUIT</h2>
                     </a>
                     <p className="searchPage_resultSnippet">
