@@ -207,19 +207,7 @@ function SearchPage() {
 
                     </a>
                     {/* eslint-disable-next-line react/jsx-no-target-blank */}
-                    <a target="_blank" href="http://delhitimesnews.co/?p=54" className="searchPage_resultSnippet">
-                        http://delhitimesnews.co/?p=54
-                    </a>
-                    <a className="searchPage_resultTitle" href='http://delhitimesnews.co/?p=54' target="_blank">
-                        <h2>COMPUTER HACKER KILLED IN POLICE PURSUIT</h2>
-                    </a>
-                    <p className="searchPage_resultSnippet">
-                        Local man was believed to have aided in the theft of
-                        international intelligence On Thursday, police attempting to arrest 24-year-old Rajar
-                        Singh fired at him during a chase through Karol Bagh
-                        neighborhood...
-                    </p>
-                    <br />
+                    
 
                     <a target="_blank" href="https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/" className="searchPage_resultSnippet">
                         https://indiankanoon.org › doc
@@ -281,7 +269,20 @@ function SearchPage() {
                         New Delhi, India Joined November 2011.
                     </p>
                     <br />
-
+                    
+                    <a target="_blank" href="http://delhitimesnews.co/?page_id=161" className="searchPage_resultSnippet">
+                        http://delhitimesnews.co/?p=54
+                    </a>
+                    <a className="searchPage_resultTitle" href='http://delhitimesnews.co/?page_id=161' target="_blank">
+                        <h2>COMPUTER HACKER KILLED IN POLICE PURSUIT</h2>
+                    </a>
+                    <p className="searchPage_resultSnippet">
+                        Local man was believed to have aided in the theft of
+                        international intelligence On Thursday, police attempting to arrest 24-year-old Rajar
+                        Singh fired at him during a chase through Karol Bagh
+                        neighborhood...
+                    </p>
+                    <br />
                     <a target="_blank" href="https://startupheadlynes.com/spacexs-startship-blasts-while-landing-after-a-successful-launch/" className="searchPage_resultSnippet">
                         https://-phulekhahttps://www.phulekha.com &gt; Rajar-singh-Prajapati…
                     </a>
